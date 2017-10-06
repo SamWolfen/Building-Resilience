@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1483566887635966}
+  m_IsPrefabParent: 1
+--- !u!1 &1483566887635966
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4260700206641422}
+  - component: {fileID: 114455252534333126}
+  m_Layer: 0
+  m_Name: QuestManager 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4260700206641422
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1483566887635966}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 21.866741, y: 6.709381, z: 13.424615}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114455252534333126
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1483566887635966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de96e38006dbbd8468ef37cfd684a2dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  qList:
+  - Title: Tutorial 1
+    Qid: 1
+    progress: 1
+    desc: Hello Player. Thank you for playing this game. Lets get started by placing
+      a block.
+    nxtQuest: 2
+    task: Place a block
+    taskCount: 0
+    taskReq: 1
+    Qreward: 
+  - Title: Tutorial 2
+    Qid: 2
+    progress: 0
+    desc: For your next quest, I want you to place a flag down.
+    nxtQuest: 3
+    task: Place a flag
+    taskCount: 0
+    taskReq: 2
+    Qreward: 
+  - Title: Tutorial 3
+    Qid: 3
+    progress: 0
+    desc: Now lets see you try to harvest a block.
+    nxtQuest: 4
+    task: Harvest a block
+    taskCount: 0
+    taskReq: 1
+    Qreward: 
+  - Title: Tutorial 4
+    Qid: 4
+    progress: 0
+    desc: The bridge has been destroyed by the storm! Player, I need you to build
+      a bridge and send a message to the other guy at the other end.
+    nxtQuest: 5
+    task: Talk to the other guy
+    taskCount: 0
+    taskReq: 1
+    Qreward: 
+  - Title: Tutorial 5
+    Qid: 5
+    progress: 0
+    desc: Thanks for passing me the message. Could let the other guy know that I had
+      received his message?
+    nxtQuest: 0
+    task: Return
+    taskCount: 0
+    taskReq: 1
+    Qreward: 
+  currentQlist: []
